@@ -1,34 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matheus Oscar Ferreira de Souza</title>
     <link href="fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .git-bg-color{
+        .git-bg{
             background-color: #24292e;
+            border-radius: 5px;
         }
-        .git-border-color{
+        .git-card-header{
+            background-color: #7b63ab;
+            color: #fff;
+        }
+        .git-card-body{
+            background-color: rgb(88 96 105);
+            color: #fff;
+        }
+        .git-border{
             border-color: #7b63ab;
+            border-radius: 10px;
         }
         .git-text-color{
             color: #7b63ab;
         }
+        .container{
+            padding-bottom: calc(var(--bs-gutter-x) * .5);
+        }
+        .btn-purple {
+            background-image: linear-gradient(to bottom, #8241f9, #6b36a7);
+            border-color: #150a27;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-    <div class="container git-bg-color">
+    <div class="container git-bg">
         <div class="col-md-12">
-            <fieldset class="git-border-color">
+            <fieldset class="git-border">
                 <legend class="git-text-color">
                     <i class="fa-brands fa-github"></i> GitHub
                 </legend>
-                <input type="text">
+                <div class="card git-border shadow-lg">
+                    <h5 class="card-header git-card-header">
+                        <span class="badge text-bg-secondary shadow">
+                            <i class="fa-solid fa-c"></i><i class="fa-solid fa-plus fa-2xs"></i><i class="fa-solid fa-plus fa-2xs"></i>
+                        </span> LingoMax
+                    </h5>
+                    <div class="card-body git-card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="image/LingoMax.png" width="100%" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="card-title">Trabalho realizado sobre arquivos indexados</h5>
+                                <p class="card-text">Utilizando o que foi apreendido em aula, desenvolvemos uma aplicação em c++, com intuito de simular um aplicativo de apreendizado de idiomas.</p>
+                                <div class="d-flex flex-row-reverse">
+                                    <a href="#" class="btn btn-purple shadow"><i class="fa-solid fa-code-branch"></i> Repositório</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
         </div>
     </div>
